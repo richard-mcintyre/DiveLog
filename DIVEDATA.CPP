@@ -50,6 +50,19 @@ CTime CDiveSet::GetABTtoDate( CDiveData* pData )
 	return time;
 }
 
+int CDiveSet::GetDiveNo( CPoint index )
+{
+	int nTotal=0;
+	
+	for( int i=0; i<=index.x-1; i++ )
+	{
+		CDiveDay* pDay = (CDiveDay*)m_diveDay.GetAt( i );
+		nTotal += pDay->GetNoOfDives() + 1;
+	}
+	
+	return nTotal + index.y + 1;
+}
+
 CPoint CDiveSet::AddDive( CDiveData* pData )
 {
 	ASSERT_VALID( pData );

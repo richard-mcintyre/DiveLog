@@ -61,6 +61,7 @@ public:
 	void		SetFileVersion( BYTE fv )	{	m_fileVersion = fv;		}
 	CTime		GetABTtoDate( CDiveData* pData );
 	void		CalcRNTDay( CPoint index );
+	int			GetDiveNo( CPoint index );
 
 public:
 	virtual void Serialize( CArchive& ar );	// overridden for i/o	

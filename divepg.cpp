@@ -192,8 +192,10 @@ void CDivePg1::OnPaint()
 	CFont* pOldFont = dc.SelectObject( &m_smallFont );
 	
 	CPoint curIndex = m_pView->GetDocument()->GetCurIndex( );
+	CDiveSet* pSet = m_pView->GetDocument()->GetDiveSet();
+	
 	char buf[50];
-	wsprintf( buf, "Dive %d / %d\0", curIndex.x+1, curIndex.y+1 );
+	wsprintf( buf, "Dive %d - %d / %d\0", pSet->GetDiveNo( curIndex ), curIndex.x+1, curIndex.y+1 );
 	if( CMainFrame::bVGA )
 		dc.DrawText( buf, -1, CRect( 0, 320, 200, 335 ), DT_CENTER );
 	else
@@ -680,8 +682,10 @@ void CDivePg2::OnPaint()
 	CFont* pOldFont = dc.SelectObject( &m_smallFont );
 
 	CPoint curIndex = m_pView->GetDocument()->GetCurIndex( );
+	CDiveSet* pSet = m_pView->GetDocument()->GetDiveSet();
+	
 	char buf[50];
-	wsprintf( buf, "Dive %d / %d\0", curIndex.x+1, curIndex.y+1 );
+	wsprintf( buf, "Dive %d - %d / %d\0", pSet->GetDiveNo( curIndex ), curIndex.x+1, curIndex.y+1 );
 
 	if( CMainFrame::bVGA )
 		dc.DrawText( buf, -1, CRect( 20, 320, 180, 335 ), DT_CENTER );

@@ -363,7 +363,7 @@ CAPTION "About Dive Log"
 FONT 8, "MS Sans Serif"
 BEGIN
     ICON            IDR_MAINFRAME,IDC_MATH,8,23,18,20
-    LTEXT           "Dive Log Version 2.02",IDC_MATH,37,6,74,8
+    LTEXT           "Dive Log Version 2.03",IDC_MATH,37,6,74,8
     DEFPUSHBUTTON   "OK",IDOK,202,5,32,14,WS_GROUP
     CONTROL         "",IDC_MATH,"Static",SS_BLACKRECT,37,46,200,1
     LTEXT           "Available Memory:",IDC_MATH,37,50,63,8,NOT WS_GROUP
