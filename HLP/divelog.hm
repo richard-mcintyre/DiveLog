@@ -1,0 +1,70 @@
+// MAKEHELP.BAT generated Help Map file.  Used by DIVELOG.HPJ. 
+ 
+// Commands (ID_* and IDM_*) 
+HID_BINTIMER                            0x1006A
+HIDM_DIVE_NEW                           0x18005
+HIDM_DIVE_REMOVE                        0x18006
+HIDM_RECORD_FIRST                       0x18007
+HIDM_RECORD_PREV                        0x18008
+HIDM_RECORD_NEXT                        0x18009
+HIDM_RECORD_LAST                        0x1800A
+HIDM_OPTIONS                            0x1800B
+HIDM_EDIT_LOCATIONS                     0x1800C
+HIDM_DEF_SETTTINGS                      0x1800D
+HIDM_REPORTS                            0x1800E
+HID_FILE_PRINT_BLANK                    0x1800F
+HID_REPORT_OPEN                         0x18010
+HID_REPORT_SAVE                         0x18011
+HIDM_TEST                               0x18013
+HID_STATIC                              0x1FFFF
+HID_STATIC2                             0x1FFFF
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20002
+HIDR_LOGTYPE                            0x20003
+HIDR_REPORTTYPE                         0x20074
+HIDR_REPORT                             0x20077
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_DIALOG_BAR                         0x20067
+HIDD_FRONT_PAGE                         0x20068
+HIDD_DIVE_PAGE1                         0x20069
+HIDD_DIVE_PAGE2                         0x2006A
+HIDD_BACK_PAGE                          0x2006B
+HIDD_PROP                               0x2006C
+HIDD_GENERAL                            0x20075
+HIDD_LOCATIONS                          0x2007A
+HIDD_DEFAULTS                           0x2007B
+HIDD_REPORTS_MAIN                       0x2007D
+HIDD_REPORT_FILTER                      0x2007F
+HIDD_REPORT_ORDER                       0x20080
+HIDD_DIVE_PAGE4                         0x20081
+HIDD_REPORT_HEADER                      0x20082
+HIDD_REPORT_COLOPT                      0x20083
+HIDD_WIN95_DIVE_PAGE1                   0x20084
+HIDD_WIN95_FRONT_PAGE                   0x20085
+HIDD_WIN95_BACK_PAGE                    0x20086
+HIDD_WIN95_DIVE_PAGE2                   0x20087
+HIDD_NOTES                              0x20088
+HIDD_REPORTS                            0x20089
+HIDD_SPLASH                             0x2008B
+HIDD_REGISTER                           0x2008C
+HIDD_THOUGHT_DAY                        0x2008D
+HIDD_DIALOG_BAR_TEMP                    0x2008E
+HIDD_REPORTS_FILTER                     0x2008F
+HIDD_BUDDY_PAGE1                        0x20090
+HIDD_DIVE_PAGE5                         0x20090
+HIDD_BUDDY_PAGE2                        0x20091
+HIDD_WIN95_BUDDY_PAGE1                  0x20092
+HIDD_WIN95_BUDDY_PAGE2                  0x20093
+HIDD_FRONT_PAGE_800                     0x20094
+HIDD_BACK_PAGE_800                      0x20095
+HIDD_BUDDY_PAGE1_800                    0x20096
+HIDD_BUDDY_PAGE2_800                    0x20097
+HIDD_DIVE_PAGE1_800                     0x20098
+HIDD_DIVE_PAGE2_800                     0x20099
+ 
+// Frame Controls (IDW_*) 

@@ -1,0 +1,1260 @@
+//Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""res\\divelog.rc2""  // non-App Studio edited resources\r\n"
+    "\r\n"
+    "#include ""afxres.rc""  \011// Standard components\r\n"
+    "#include ""afxprint.rc""\011// printing/print preview resources\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+IDR_MAINFRAME           ICON    DISCARDABLE     "RES\\DIVELOG.ICO"
+IDR_LOGTYPE             ICON    DISCARDABLE     "RES\\DIVEDOC.ICO"
+IDI_BIN                 ICON    DISCARDABLE     "RES\\BIN.ICO"
+IDR_REPORTTYPE          ICON    DISCARDABLE     "RES\\IDR_REPO.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "RES\\TOOLBAR.BMP"
+IDB_NEXTPAGE            BITMAP  MOVEABLE PURE   "RES\\NEXTPAGE.BMP"
+IDB_PREVPAGE            BITMAP  MOVEABLE PURE   "RES\\PREVPAGE.BMP"
+IDB_DIVEPG1             BITMAP  DISCARDABLE     "RES\\TANK_FUL.BMP"
+IDB_DIVEPG2             BITMAP  DISCARDABLE     "RES\\PICTURE.BMP"
+IDB_FRONT_PG_OLD        BITMAP  DISCARDABLE     "RES\\FRONT_PG.BMP"
+IDB_FRONT_PG            BITMAP  DISCARDABLE     "RES\\BMP00001.BMP"
+IDB_BIN                 BITMAP  DISCARDABLE     "RES\\BIN.BMP"
+IDR_REPORT              BITMAP  MOVEABLE PURE   "RES\\IDR_MAIN.BMP"
+IDB_SPLASH              BITMAP  DISCARDABLE     "RES\\BITMAP1.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM "&Using Help",                 ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "&About Dive Log...",          ID_APP_ABOUT
+    END
+END
+
+IDR_LOGTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "&Print Blank Dive...",        ID_FILE_PRINT_BLANK
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Reports...",                 IDM_REPORTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Locations...",               IDM_EDIT_LOCATIONS
+        MENUITEM "&Default Settings...",        IDM_DEF_SETTTINGS
+    END
+    POPUP "&Record"
+    BEGIN
+        MENUITEM "&New Record",                 IDM_DIVE_NEW
+        MENUITEM "&Remove Record",              IDM_DIVE_REMOVE
+        MENUITEM SEPARATOR
+        MENUITEM "&First Record",               IDM_RECORD_FIRST
+        MENUITEM "&Previous Record",            IDM_RECORD_PREV
+        MENUITEM "&Next Record",                IDM_RECORD_NEXT
+        MENUITEM "&Last Record",                IDM_RECORD_LAST
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM "&Using Help",                 ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "&About Dive Log...",          ID_APP_ABOUT
+    END
+END
+
+IDR_REPORTTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...",                   ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM "&Using Help",                 ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "&About Dive Log...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FRONT_PAGE DIALOG DISCARDABLE  0, 0, 112, 202
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Button1",IDC_BUTTON1,0,196,6,6,NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,12,106,71
+    EDITTEXT        IDC_EDIT_FRONT,0,119,106,64,ES_CENTER | ES_MULTILINE | 
+                    0x1000
+END
+
+IDD_DIVE_PAGE1 DIALOG DISCARDABLE  0, 0, 112, 206
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_DATE,41,0,71,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LOCATION_COMBO,23,15,89,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Good",IDC_RADIO_VIS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,19,39,29,10
+    CONTROL         "&Medium",IDC_VIS_MEDIUM,"Button",BS_AUTORADIOBUTTON,55,
+                    39,36,10
+    CONTROL         "&Poor",IDC_VIS_POOR,"Button",BS_AUTORADIOBUTTON,19,51,
+                    26,10
+    EDITTEXT        IDC_EDIT_VIS,55,50,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AIR_START,21,91,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AIR_END,70,91,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIME_IN,21,105,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIME_OUT,70,105,24,12,ES_AUTOHSCROLL
+    CONTROL         "        &A",IDC_RADIO_AIR,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,14,151,12,10
+    CONTROL         "       ",IDC_RADIO_AIR_WARM,"Button",BS_AUTORADIOBUTTON,
+                    41,151,12,10
+    CONTROL         "           ",IDC_RADIO_AIR_HOT,"Button",
+                    BS_AUTORADIOBUTTON,64,151,12,10
+    CONTROL         "      &S",IDC_RADIO_SURFACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,14,166,12,10
+    CONTROL         "             ",IDC_RADIO_SURFACE_WARM,"Button",
+                    BS_AUTORADIOBUTTON,41,166,12,10
+    CONTROL         "                   ",IDC_RADIO_SURFACE_HOT,"Button",
+                    BS_AUTORADIOBUTTON,64,166,12,10
+    CONTROL         "          &B",IDC_RADIO_BOTTOM,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,177,12,10
+    CONTROL         "                 ",IDC_RADIO_BOTTOM_WARM,"Button",
+                    BS_AUTORADIOBUTTON,41,177,12,10
+    CONTROL         "                   ",IDC_RADIO_BOTTOM_HOT,"Button",
+                    BS_AUTORADIOBUTTON,64,177,12,10
+    LTEXT           "&Bottom",IDC_STATIC,82,177,24,8,NOT WS_GROUP
+    LTEXT           "&Surface",IDC_STATIC,82,166,27,8,NOT WS_GROUP
+    LTEXT           "&Air",IDC_STATIC,82,151,10,8,NOT WS_GROUP
+    RTEXT           "Date:",IDC_STATIC,10,2,30,8,NOT WS_GROUP
+    LTEXT           "Loc.:",IDC_STATIC,4,18,18,8,NOT WS_GROUP
+    GROUPBOX        "Average Visibility",IDC_STATIC,14,30,83,37
+    LTEXT           "Ft.",IDC_MEASURE_VIS,79,52,14,8
+    GROUPBOX        "Tank Pressures && Time",IDC_STATIC,4,70,106,53
+    LTEXT           "START",IDC_STATIC,21,81,25,8,NOT WS_GROUP
+    LTEXT           "END",IDC_STATIC,70,81,16,8,NOT WS_GROUP
+    LTEXT           "bar",IDC_MEASURE_AIR_START,43,94,12,8,NOT WS_GROUP
+    LTEXT           "bar",IDC_MEASURE_AIR_END,93,94,12,8,NOT WS_GROUP
+    RTEXT           "In:",IDC_STATIC,10,107,10,8,NOT WS_GROUP
+    RTEXT           "Out:",IDC_STATIC,54,107,15,8,NOT WS_GROUP
+    GROUPBOX        "Temperature",IDC_STATIC,4,124,106,68
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,31,135,1,56
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,57,135,1,56
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,78,135,1,56
+END
+
+IDD_DIVE_PAGE2 DIALOG DISCARDABLE  0, 0, 115, 206
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_SI,14,0,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DEPTH,11,21,19,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BOTTOM_TIME,50,48,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STOP,87,21,19,13,ES_AUTOHSCROLL
+    LTEXT           "__________________",IDC_STATIC,19,64,74,8,NOT WS_GROUP
+    CTEXT           "TBT",IDC_STATIC,76,63,16,8
+    CTEXT           "ABT",IDC_STATIC,48,63,16,8
+    LTEXT           "SI",IDC_STATIC,3,2,8,8,NOT WS_GROUP
+    CTEXT           "A",IDC_PG_BEFORE,41,2,6,8,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,15,40,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,47,15,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,47,44,32,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,79,15,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,79,15,25,1
+    LTEXT           "m",IDC_MEASURE_DEPTH,32,23,10,8,NOT WS_GROUP
+    LTEXT           "Depth",IDC_STATIC,10,34,21,8,NOT WS_GROUP
+    CTEXT           "15ft/5m stop",IDC_STATIC,82,36,28,16,NOT WS_GROUP
+    LTEXT           "mins.",IDC_STATIC,70,50,18,8,NOT WS_GROUP
+    LTEXT           "Bottom Time:",IDC_STATIC,4,50,44,8,NOT WS_GROUP
+    CTEXT           "RNT",IDC_STATIC,20,63,16,8
+    CTEXT           "0",IDC_RNT,20,75,16,8,NOT WS_GROUP
+    CTEXT           "0",IDC_ABT,48,75,16,8,NOT WS_GROUP
+    CTEXT           "0",IDC_TBT,76,75,16,8,NOT WS_GROUP
+    LTEXT           "+",IDC_STATIC,39,75,6,8,NOT WS_GROUP
+    LTEXT           "=",IDC_STATIC,68,75,6,8,NOT WS_GROUP
+    CONTROL         "&Fresh",IDC_CHECK_FRESH,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,14,94,35,10
+    CONTROL         "&Salt",IDC_CHECK_SALT,"Button",BS_AUTOCHECKBOX,14,103,
+                    35,10
+    CONTROL         "S&hore",IDC_CHECK_SHORE,"Button",BS_AUTOCHECKBOX,14,112,
+                    35,10
+    CONTROL         "&Boat",IDC_CHECK_BOAT,"Button",BS_AUTOCHECKBOX,14,121,
+                    35,10
+    CONTROL         "&Waves",IDC_CHECK_WAVES,"Button",BS_AUTOCHECKBOX,61,94,
+                    35,10
+    CONTROL         "&Current",IDC_CHECK_CURRENT,"Button",BS_AUTOCHECKBOX,61,
+                    103,35,10
+    CONTROL         "S&urf",IDC_CHECK_SURF,"Button",BS_AUTOCHECKBOX,61,112,
+                    35,10
+    CONTROL         "Su&rge",IDC_CHECK_SURGE,"Button",BS_AUTOCHECKBOX,61,121,
+                    35,10
+    GROUPBOX        "Dive Type",IDC_STATIC,2,86,105,47
+    CONTROL         "&Dry Suit",IDC_CHECK_DRYSUIT,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,11,143,39,10
+    CONTROL         "&Wet Suit",IDC_CHECK_WETSUIT,"Button",BS_AUTOCHECKBOX,
+                    11,152,40,10
+    CONTROL         "&S-Dry Suit",IDC_CHECK_SEMI_DRYSUIT,"Button",
+                    BS_AUTOCHECKBOX,11,161,44,10
+    CONTROL         "&Under Suit",IDC_CHECK_UNDERSUIT,"Button",
+                    BS_AUTOCHECKBOX,11,170,45,10
+    CONTROL         "&Gloves",IDC_CHECK_GLOVES,"Button",BS_AUTOCHECKBOX,63,
+                    143,35,10
+    CONTROL         "&Mittens",IDC_CHECK_MITTENS,"Button",BS_AUTOCHECKBOX,63,
+                    152,35,10
+    CONTROL         "&Hood",IDC_CHECK_HOOD,"Button",BS_AUTOCHECKBOX,63,161,
+                    35,10
+    CONTROL         "&Socks",IDC_CHECK_SOCKS,"Button",BS_AUTOCHECKBOX,63,170,
+                    35,10
+    GROUPBOX        "Exposure Protection",IDC_STATIC,2,135,105,47
+    RTEXT           "Weight:",IDC_STATIC,4,187,27,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_WEIGHT,32,184,16,12,ES_AUTOHSCROLL
+    LTEXT           "lbs.",IDC_MEASURE_WEIGHT,49,187,13,8,NOT WS_GROUP
+    PUSHBUTTON      "&Notes",IDC_NOTES,66,183,39,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,39,0,12,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,38,0,1,12
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,39,11,12,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,50,0,1,12
+    CTEXT           "A",IDC_PG_AFTER,83,2,6,8,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,81,0,12,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,80,0,1,12
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,81,11,12,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,92,0,1,12
+END
+
+IDD_BACK_PAGE DIALOG DISCARDABLE  0, 0, 112, 202
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Dive Log Version 2.0\nWritten by C-Base Design",
+                    IDC_STATIC,0,185,112,17
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  34, 22, 239, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Dive Log"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_MATH,8,23,18,20
+    LTEXT           "Dive Log Version 2.02",IDC_MATH,37,6,74,8
+    DEFPUSHBUTTON   "OK",IDOK,202,5,32,14,WS_GROUP
+    CONTROL         "",IDC_MATH,"Static",SS_BLACKRECT,37,46,200,1
+    LTEXT           "Available Memory:",IDC_MATH,37,50,63,8,NOT WS_GROUP
+    LTEXT           "(Avail mem)",IDC_AVAIL_MEM,109,50,129,8,NOT WS_GROUP
+    LTEXT           "Math Co-processor:",IDC_MATH_TXT,37,58,66,8,NOT 
+                    WS_GROUP
+    LTEXT           "(Math coprocessor)",IDC_MATH_COPR_TXT,109,58,129,8,NOT 
+                    WS_GROUP
+    LTEXT           "Disk Space:",IDC_MATH,37,66,70,8,NOT WS_GROUP
+    LTEXT           "(Disk space)",IDC_DISK_SPACE,109,66,128,8,NOT WS_GROUP
+    LTEXT           "Using the Microsoft Foundation Classes Version 2.5",
+                    IDC_MFC_VER,37,26,168,8,NOT WS_GROUP
+    LTEXT           "Released:",IDC_MATH,37,36,34,8
+    LTEXT           "(Release Date)",IDC_RELEASED,71,36,124,8
+    LTEXT           "",IDC_DEBUG,138,9,46,8
+    LTEXT           "Written by C-Base Design",IDC_MATH,37,16,86,8
+END
+
+IDD_LOCATIONS DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Locations"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_LOCATIONS,10,13,108,72,CBS_SIMPLE | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "OK",IDOK,127,10,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,127,30,50,14
+    DEFPUSHBUTTON   "&Add",IDC_ADD,127,50,50,14
+    PUSHBUTTON      "&Remove",IDC_REMOVE,127,70,50,14
+END
+
+IDD_DEFAULTS DIALOG DISCARDABLE  0, 0, 226, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Default Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_LOCATION_LIST,52,8,99,51,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "&No Defaults",IDC_NODEFAULT,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,52,22,48,10
+    EDITTEXT        IDC_EDIT_WEIGHT,83,50,21,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "lbs.",IDC_WEIGHT_LBS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,113,44,22,10
+    CONTROL         "kgs.",IDC_WEIGHT_KGS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,113,56,24,10
+    CONTROL         "&Fresh",IDC_CHECK_FRESH,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,16,81,35,10
+    CONTROL         "&Salt",IDC_CHECK_SALT,"Button",BS_AUTOCHECKBOX,16,90,35,
+                    10
+    CONTROL         "S&hore",IDC_CHECK_SHORE,"Button",BS_AUTOCHECKBOX,16,99,
+                    35,10
+    CONTROL         "&Boat",IDC_CHECK_BOAT,"Button",BS_AUTOCHECKBOX,16,108,
+                    35,10
+    CONTROL         "&Waves",IDC_CHECK_WAVES,"Button",BS_AUTOCHECKBOX,63,81,
+                    35,10
+    CONTROL         "&Current",IDC_CHECK_CURRENT,"Button",BS_AUTOCHECKBOX,63,
+                    90,35,10
+    CONTROL         "S&urf",IDC_CHECK_SURF,"Button",BS_AUTOCHECKBOX,63,99,35,
+                    10
+    CONTROL         "Su&rge",IDC_CHECK_SURGE,"Button",BS_AUTOCHECKBOX,63,108,
+                    35,10
+    CONTROL         "&Dry Suit",IDC_CHECK_DRYSUIT,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,124,81,39,10
+    CONTROL         "&Wet Suit",IDC_CHECK_WETSUIT,"Button",BS_AUTOCHECKBOX,
+                    124,90,40,10
+    CONTROL         "&S-Dry Suit",IDC_CHECK_SEMI_DRYSUIT,"Button",
+                    BS_AUTOCHECKBOX,124,99,44,10
+    CONTROL         "&Under Suit",IDC_CHECK_UNDERSUIT,"Button",
+                    BS_AUTOCHECKBOX,124,108,45,10
+    CONTROL         "&Gloves",IDC_CHECK_GLOVES,"Button",BS_AUTOCHECKBOX,176,
+                    81,35,10
+    CONTROL         "&Mittens",IDC_CHECK_MITTENS,"Button",BS_AUTOCHECKBOX,
+                    176,90,35,10
+    CONTROL         "&Hood",IDC_CHECK_HOOD,"Button",BS_AUTOCHECKBOX,176,99,
+                    35,10
+    CONTROL         "&Socks",IDC_CHECK_SOCKS,"Button",BS_AUTOCHECKBOX,176,
+                    108,35,10
+    DEFPUSHBUTTON   "OK",IDOK,169,8,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,169,25,50,14
+    RTEXT           "Location",IDC_STATIC,13,10,34,8
+    GROUPBOX        "Dive Type",IDC_GRP_DIVE,4,73,105,47
+    GROUPBOX        "Exposure Protection",IDC_GRP_EXP,115,73,105,47
+    GROUPBOX        "Weight",IDC_GRP_WEIGHT,77,34,63,36
+END
+
+IDD_WIN95_DIVE_PAGE1 DIALOG DISCARDABLE  0, 0, 132, 206
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_DATE,41,0,86,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LOCATION_COMBO,23,15,103,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Good",IDC_RADIO_VIS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,31,39,29,10
+    CONTROL         "&Medium",IDC_VIS_MEDIUM,"Button",BS_AUTORADIOBUTTON,67,
+                    39,36,10
+    CONTROL         "&Poor",IDC_VIS_POOR,"Button",BS_AUTORADIOBUTTON,31,51,
+                    26,10
+    EDITTEXT        IDC_EDIT_VIS,67,50,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AIR_START,27,91,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AIR_END,81,91,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIME_IN,27,105,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIME_OUT,81,105,24,12,ES_AUTOHSCROLL
+    CONTROL         "        &A",IDC_RADIO_AIR,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,18,150,12,10
+    CONTROL         "       ",IDC_RADIO_AIR_WARM,"Button",BS_AUTORADIOBUTTON,
+                    49,150,12,10
+    CONTROL         "           ",IDC_RADIO_AIR_HOT,"Button",
+                    BS_AUTORADIOBUTTON,75,151,12,10
+    CONTROL         "      &S",IDC_RADIO_SURFACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,18,165,12,10
+    CONTROL         "             ",IDC_RADIO_SURFACE_WARM,"Button",
+                    BS_AUTORADIOBUTTON,49,166,12,10
+    CONTROL         "                   ",IDC_RADIO_SURFACE_HOT,"Button",
+                    BS_AUTORADIOBUTTON,75,166,12,10
+    CONTROL         "          &B",IDC_RADIO_BOTTOM,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,18,176,12,10
+    CONTROL         "                 ",IDC_RADIO_BOTTOM_WARM,"Button",
+                    BS_AUTORADIOBUTTON,49,177,12,10
+    CONTROL         "                   ",IDC_RADIO_BOTTOM_HOT,"Button",
+                    BS_AUTORADIOBUTTON,75,177,12,10
+    LTEXT           "&Bottom",IDC_STATIC,94,177,24,8,NOT WS_GROUP
+    LTEXT           "&Surface",IDC_STATIC,94,166,27,8,NOT WS_GROUP
+    LTEXT           "&Air",IDC_STATIC,94,150,10,8,NOT WS_GROUP
+    RTEXT           "Date:",IDC_STATIC,10,2,30,8,NOT WS_GROUP
+    LTEXT           "Loc.:",IDC_STATIC,4,18,18,8,NOT WS_GROUP
+    GROUPBOX        "Average Visibility",IDC_STATIC,26,30,83,37
+    LTEXT           "Ft.",IDC_MEASURE_VIS,91,52,14,8
+    GROUPBOX        "Tank Pressures && Time",IDC_STATIC,4,70,122,53
+    LTEXT           "START",IDC_STATIC,27,81,25,8,NOT WS_GROUP
+    LTEXT           "END",IDC_STATIC,81,81,16,8,NOT WS_GROUP
+    LTEXT           "bar",IDC_MEASURE_AIR_START,49,94,12,8,NOT WS_GROUP
+    LTEXT           "bar",IDC_MEASURE_AIR_END,105,94,12,8,NOT WS_GROUP
+    RTEXT           "In:",IDC_STATIC,16,107,10,8,NOT WS_GROUP
+    RTEXT           "Out:",IDC_STATIC,65,107,15,8,NOT WS_GROUP
+    GROUPBOX        "Temperature",IDC_STATIC,4,124,123,68
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,36,134,1,56
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,65,135,1,56
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,90,134,1,56
+END
+
+IDD_WIN95_FRONT_PAGE DIALOG DISCARDABLE  0, 0, 132, 202
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Button1",IDC_BUTTON1,0,196,6,6,NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,12,124,71
+    EDITTEXT        IDC_EDIT_FRONT,5,119,120,64,ES_CENTER | ES_MULTILINE | 
+                    0x1000
+END
+
+IDD_WIN95_BACK_PAGE DIALOG DISCARDABLE  0, 0, 132, 202
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Dive Log Version 2.0\nWritten by C-Base Design",
+                    IDC_STATIC,0,185,131,17
+END
+
+IDD_WIN95_DIVE_PAGE2 DIALOG DISCARDABLE  0, 0, 140, 206
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_SI,27,2,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DEPTH,23,23,19,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BOTTOM_TIME,63,50,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STOP,99,23,19,13,ES_AUTOHSCROLL
+    LTEXT           "__________________",IDC_STATIC,31,65,74,8,NOT WS_GROUP
+    CTEXT           "TBT",IDC_STATIC,89,64,16,8
+    CTEXT           "ABT",IDC_STATIC,61,64,16,8
+    LTEXT           "SI",IDC_STATIC,15,3,8,8,NOT WS_GROUP
+    CTEXT           "A",IDC_PG_BEFORE,53,3,6,8,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,19,16,40,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,59,16,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,59,46,32,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,91,16,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,91,16,25,1
+    LTEXT           "m",IDC_MEASURE_DEPTH,45,24,10,8,NOT WS_GROUP
+    LTEXT           "Depth",IDC_STATIC,23,35,21,8,NOT WS_GROUP
+    CTEXT           "15ft/5m stop",IDC_STATIC,95,38,28,16,NOT WS_GROUP
+    LTEXT           "mins.",IDC_STATIC,83,51,18,8,NOT WS_GROUP
+    LTEXT           "Bottom Time:",IDC_STATIC,17,51,44,8,NOT WS_GROUP
+    CTEXT           "RNT",IDC_STATIC,33,64,16,8
+    CTEXT           "0",IDC_RNT,33,76,16,8,NOT WS_GROUP
+    CTEXT           "0",IDC_ABT,61,76,16,8,NOT WS_GROUP
+    CTEXT           "0",IDC_TBT,89,76,16,8,NOT WS_GROUP
+    LTEXT           "+",IDC_STATIC,51,76,6,8,NOT WS_GROUP
+    LTEXT           "=",IDC_STATIC,81,76,6,8,NOT WS_GROUP
+    CONTROL         "&Fresh",IDC_CHECK_FRESH,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,29,95,35,10
+    CONTROL         "&Salt",IDC_CHECK_SALT,"Button",BS_AUTOCHECKBOX,29,104,
+                    35,10
+    CONTROL         "S&hore",IDC_CHECK_SHORE,"Button",BS_AUTOCHECKBOX,29,113,
+                    35,10
+    CONTROL         "&Boat",IDC_CHECK_BOAT,"Button",BS_AUTOCHECKBOX,29,122,
+                    35,10
+    CONTROL         "&Waves",IDC_CHECK_WAVES,"Button",BS_AUTOCHECKBOX,75,95,
+                    35,10
+    CONTROL         "&Current",IDC_CHECK_CURRENT,"Button",BS_AUTOCHECKBOX,75,
+                    104,35,10
+    CONTROL         "S&urf",IDC_CHECK_SURF,"Button",BS_AUTOCHECKBOX,75,113,
+                    35,10
+    CONTROL         "Su&rge",IDC_CHECK_SURGE,"Button",BS_AUTOCHECKBOX,75,122,
+                    35,10
+    GROUPBOX        "Dive Type",IDC_STATIC,17,87,105,47
+    CONTROL         "&Dry Suit",IDC_CHECK_DRYSUIT,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,25,144,39,10
+    CONTROL         "&Wet Suit",IDC_CHECK_WETSUIT,"Button",BS_AUTOCHECKBOX,
+                    25,153,40,10
+    CONTROL         "&S-Dry Suit",IDC_CHECK_SEMI_DRYSUIT,"Button",
+                    BS_AUTOCHECKBOX,25,162,44,10
+    CONTROL         "&Under Suit",IDC_CHECK_UNDERSUIT,"Button",
+                    BS_AUTOCHECKBOX,25,171,45,10
+    CONTROL         "&Gloves",IDC_CHECK_GLOVES,"Button",BS_AUTOCHECKBOX,77,
+                    144,35,10
+    CONTROL         "&Mittens",IDC_CHECK_MITTENS,"Button",BS_AUTOCHECKBOX,77,
+                    153,35,10
+    CONTROL         "&Hood",IDC_CHECK_HOOD,"Button",BS_AUTOCHECKBOX,77,162,
+                    35,10
+    CONTROL         "&Socks",IDC_CHECK_SOCKS,"Button",BS_AUTOCHECKBOX,77,171,
+                    35,10
+    GROUPBOX        "Exposure Protection",IDC_STATIC,17,136,105,47
+    RTEXT           "Weight:",IDC_STATIC,19,188,27,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_WEIGHT,47,185,16,12,ES_AUTOHSCROLL
+    LTEXT           "lbs.",IDC_MEASURE_WEIGHT,63,188,13,8,NOT WS_GROUP
+    PUSHBUTTON      "&Notes",IDC_NOTES,81,184,39,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,51,2,12,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,51,2,1,12
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,51,14,12,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,63,2,1,12
+    CTEXT           "A",IDC_PG_AFTER,95,3,6,8,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,93,2,12,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,93,2,1,12
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,93,14,12,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,105,2,1,12
+END
+
+IDD_NOTES DIALOG DISCARDABLE  0, 0, 154, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Notes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NOTES,5,6,142,85,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL | 0x1000
+    DEFPUSHBUTTON   "OK",IDOK,21,98,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,83,98,50,14
+END
+
+IDD_REPORTS DIALOG DISCARDABLE  0, 0, 202, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Reports"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,44,126,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,108,126,50,14
+    LISTBOX         IDC_COLS_LIST,7,14,78,71,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Columns",IDC_STATIC,7,4,28,8
+    LISTBOX         IDC_REPCOLS_LIST,115,14,78,71,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Report Columns",IDC_STATIC,115,4,51,8
+    PUSHBUTTON      ">>",IDC_INSERT_ALL,87,33,26,14
+    PUSHBUTTON      "<<",IDC_REMOVE_ALL,87,52,26,14
+    PUSHBUTTON      ">",IDC_INSERT,87,14,26,14
+    PUSHBUTTON      "<",IDC_REMOVE,87,71,26,14
+    PUSHBUTTON      "&Filter",IDC_FILTER,144,98,50,14
+    RTEXT           "Report Column Name:",IDC_STATIC,2,92,80,8
+    RTEXT           "Width:",IDC_STATIC,46,106,36,8
+    EDITTEXT        IDC_REPNAME,83,88,58,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_REPWIDTH,83,104,58,13,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_SPLASH DIALOG DISCARDABLE  0, 0, 189, 97
+STYLE WS_POPUP | WS_VISIBLE | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Splash Window",IDOK,15,21,99,14,NOT WS_VISIBLE
+END
+
+IDD_REGISTER DIALOG DISCARDABLE  0, 0, 176, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Dive Log Registration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,45,9,119,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMPANY,45,27,119,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,49,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,91,49,50,14
+    RTEXT           "Name",IDC_STATIC,5,12,38,8
+    RTEXT           "Company",IDC_STATIC,5,30,38,8
+END
+
+IDD_THOUGHT_DAY DIALOG DISCARDABLE  0, 0, 150, 88
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Thought of the Day"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,94,70,50,14
+    GROUPBOX        "",IDC_STATIC,5,0,139,65
+    LTEXT           "- UNKNOWN",IDC_AUTHOR,9,54,131,8
+    LTEXT           """It is wise to keep in mind that no success or failure is necessarily final.""",
+                    IDC_THOUGHT,9,9,131,40
+    CONTROL         "Show Thoughts",IDC_SHOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,72,71,10
+END
+
+IDD_DIALOG_BAR_TEMP DIALOG DISCARDABLE  0, 0, 42, 239
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "00:00",IDC_ABT_TO_DATE,5,131,30,8,NOT WS_VISIBLE
+    CTEXT           "00:00",IDC_ABT_ALL_DIVES,5,167,30,8,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_BAR DIALOG DISCARDABLE  0, 0, 42, 239
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "ABT to Date",IDC_STATIC,7,111,26,16
+    CTEXT           "All Dives",IDC_STATIC,7,146,26,16
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,3,128,34,14
+    CTEXT           "00:00",IDC_ABT_TO_DATE,5,131,30,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,3,164,34,14
+    CTEXT           "00:00",IDC_ABT_ALL_DIVES,5,167,30,8
+END
+
+IDD_REPORTS_FILTER DIALOG DISCARDABLE  0, 0, 243, 104
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Report Filter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COLUMN1,7,11,71,74,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OPER1,83,11,37,34,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_VALUE1,125,11,67,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_JOIN1,197,11,37,34,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COLUMN2,7,34,71,74,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OPER2,83,34,37,34,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_VALUE2,125,34,67,13,ES_AUTOHSCROLL | WS_DISABLED
+    COMBOBOX        IDC_JOIN2,197,34,37,34,CBS_DROPDOWN | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COLUMN3,7,57,71,74,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OPER3,83,57,37,34,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_VALUE3,125,57,67,13,ES_AUTOHSCROLL | WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,67,82,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,82,50,14
+END
+
+IDD_BUDDY_PAGE1 DIALOG DISCARDABLE  0, 0, 112, 206
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Title",IDC_STATIC,23,6,16,8
+    RTEXT           "First Name",IDC_STATIC,3,21,36,8
+    RTEXT           "Last Name",IDC_STATIC,2,36,37,8
+    EDITTEXT        IDC_TITLE,40,3,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FIRSTNAME,40,18,68,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LASTNAME,40,33,68,13,ES_AUTOHSCROLL
+    LTEXT           "Address",IDC_STATIC,3,52,30,8
+    EDITTEXT        IDC_ADDRESS,3,62,102,72,ES_MULTILINE | 0x1000
+    LTEXT           "Phone",IDC_STATIC,3,138,30,8
+    EDITTEXT        IDC_PHONE,3,147,102,13,ES_AUTOHSCROLL
+    LTEXT           "FAX",IDC_STATIC,3,163,30,8
+    EDITTEXT        IDC_FAX,3,172,102,13,ES_AUTOHSCROLL
+END
+
+IDD_BUDDY_PAGE2 DIALOG DISCARDABLE  0, 0, 114, 206
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NOTES,3,14,88,175,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL | 0x1000
+    PUSHBUTTON      "A",IDC_BUTTON_A,95,0,9,14,WS_DISABLED
+    PUSHBUTTON      "B",IDC_BUTTON_B,95,15,9,14,WS_DISABLED
+    PUSHBUTTON      "C",IDC_BUTTON_C,95,30,9,14,WS_DISABLED
+    PUSHBUTTON      "D",IDC_BUTTON_D,95,45,9,14,WS_DISABLED
+    PUSHBUTTON      "E",IDC_BUTTON_E,95,60,9,14,WS_DISABLED
+    PUSHBUTTON      "F",IDC_BUTTON_F,95,75,9,14,WS_DISABLED
+    PUSHBUTTON      "G",IDC_BUTTON_G,95,90,9,14,WS_DISABLED
+    PUSHBUTTON      "H",IDC_BUTTON_H,95,105,9,14,WS_DISABLED
+    PUSHBUTTON      "I",IDC_BUTTON_I,95,120,9,14,WS_DISABLED
+    PUSHBUTTON      "M",IDC_BUTTON_M,95,180,9,14,WS_DISABLED
+    PUSHBUTTON      "L",IDC_BUTTON_L,95,165,9,14,WS_DISABLED
+    PUSHBUTTON      "K",IDC_BUTTON_K,95,150,9,14,WS_DISABLED
+    PUSHBUTTON      "J",IDC_BUTTON_J,95,135,9,14,WS_DISABLED
+    PUSHBUTTON      "N",IDC_BUTTON_N,105,0,9,14,WS_DISABLED
+    PUSHBUTTON      "O",IDC_BUTTON_O,105,15,9,14,WS_DISABLED
+    PUSHBUTTON      "P",IDC_BUTTON_P,105,30,9,14,WS_DISABLED
+    PUSHBUTTON      "Q",IDC_BUTTON_Q,105,45,9,14,WS_DISABLED
+    PUSHBUTTON      "R",IDC_BUTTON_R,105,60,9,14,WS_DISABLED
+    PUSHBUTTON      "S",IDC_BUTTON_S,105,75,9,14,WS_DISABLED
+    PUSHBUTTON      "T",IDC_BUTTON_T,105,90,9,14,WS_DISABLED
+    PUSHBUTTON      "U",IDC_BUTTON_U,105,105,9,14,WS_DISABLED
+    PUSHBUTTON      "V",IDC_BUTTON_V,105,120,9,14,WS_DISABLED
+    PUSHBUTTON      "Z",IDC_BUTTON_Z,105,180,9,14,WS_DISABLED
+    PUSHBUTTON      "Y",IDC_BUTTON_Y,105,165,9,14,WS_DISABLED
+    PUSHBUTTON      "X",IDC_BUTTON_X,105,150,9,14,WS_DISABLED
+    PUSHBUTTON      "W",IDC_BUTTON_W,105,135,9,14,WS_DISABLED
+    LTEXT           "Notes",IDC_STATIC,3,4,30,8
+END
+
+IDD_WIN95_BUDDY_PAGE1 DIALOG DISCARDABLE  0, 0, 132, 206
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Title",IDC_STATIC,32,6,16,8
+    RTEXT           "First Name",IDC_STATIC,12,20,36,8
+    RTEXT           "Last Name",IDC_STATIC,11,36,37,8
+    EDITTEXT        IDC_TITLE,49,2,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FIRSTNAME,49,17,68,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LASTNAME,49,33,68,13,ES_AUTOHSCROLL
+    LTEXT           "Address",IDC_STATIC,12,52,30,8
+    EDITTEXT        IDC_ADDRESS,12,62,102,72,ES_MULTILINE | 0x1000
+    LTEXT           "Phone",IDC_STATIC,12,137,30,8
+    EDITTEXT        IDC_PHONE,12,146,102,13,ES_AUTOHSCROLL
+    LTEXT           "FAX",IDC_STATIC,12,162,30,8
+    EDITTEXT        IDC_FAX,12,172,102,13,ES_AUTOHSCROLL
+END
+
+IDD_WIN95_BUDDY_PAGE2 DIALOG DISCARDABLE  0, 0, 138, 206
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NOTES,3,14,109,175,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL | 0x1000
+    PUSHBUTTON      "A",IDC_BUTTON_A,119,0,9,14,WS_DISABLED
+    PUSHBUTTON      "B",IDC_BUTTON_B,119,15,9,14,WS_DISABLED
+    PUSHBUTTON      "C",IDC_BUTTON_C,119,30,9,14,WS_DISABLED
+    PUSHBUTTON      "D",IDC_BUTTON_D,119,45,9,14,WS_DISABLED
+    PUSHBUTTON      "E",IDC_BUTTON_E,119,60,9,14,WS_DISABLED
+    PUSHBUTTON      "F",IDC_BUTTON_F,119,75,9,14,WS_DISABLED
+    PUSHBUTTON      "G",IDC_BUTTON_G,119,90,9,14,WS_DISABLED
+    PUSHBUTTON      "H",IDC_BUTTON_H,119,105,9,14,WS_DISABLED
+    PUSHBUTTON      "I",IDC_BUTTON_I,119,120,9,14,WS_DISABLED
+    PUSHBUTTON      "M",IDC_BUTTON_M,119,180,9,14,WS_DISABLED
+    PUSHBUTTON      "L",IDC_BUTTON_L,119,165,9,14,WS_DISABLED
+    PUSHBUTTON      "K",IDC_BUTTON_K,119,150,9,14,WS_DISABLED
+    PUSHBUTTON      "J",IDC_BUTTON_J,119,135,9,14,WS_DISABLED
+    PUSHBUTTON      "N",IDC_BUTTON_N,129,0,9,14,WS_DISABLED
+    PUSHBUTTON      "O",IDC_BUTTON_O,129,15,9,14,WS_DISABLED
+    PUSHBUTTON      "P",IDC_BUTTON_P,129,30,9,14,WS_DISABLED
+    PUSHBUTTON      "Q",IDC_BUTTON_Q,129,45,9,14,WS_DISABLED
+    PUSHBUTTON      "R",IDC_BUTTON_R,129,60,9,14,WS_DISABLED
+    PUSHBUTTON      "S",IDC_BUTTON_S,129,75,9,14,WS_DISABLED
+    PUSHBUTTON      "T",IDC_BUTTON_T,129,90,9,14,WS_DISABLED
+    PUSHBUTTON      "U",IDC_BUTTON_U,129,105,9,14,WS_DISABLED
+    PUSHBUTTON      "V",IDC_BUTTON_V,129,120,9,14,WS_DISABLED
+    PUSHBUTTON      "Z",IDC_BUTTON_Z,129,180,9,14,WS_DISABLED
+    PUSHBUTTON      "Y",IDC_BUTTON_Y,129,165,9,14,WS_DISABLED
+    PUSHBUTTON      "X",IDC_BUTTON_X,129,150,9,14,WS_DISABLED
+    PUSHBUTTON      "W",IDC_BUTTON_W,129,135,9,14,WS_DISABLED
+    LTEXT           "Notes",IDC_STATIC,3,4,30,8
+END
+
+IDD_FRONT_PAGE_800 DIALOG DISCARDABLE  0, 0, 157, 267
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Button1",IDC_BUTTON1,0,261,6,6,NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,25,12,106,71
+    EDITTEXT        IDC_EDIT_FRONT,14,153,128,84,ES_CENTER | ES_MULTILINE | 
+                    0x1000
+END
+
+IDD_BACK_PAGE_800 DIALOG DISCARDABLE  0, 0, 156, 268
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Dive Log Version 2.0\nWritten by C-Base Design",
+                    IDC_STATIC,0,250,155,17
+END
+
+IDD_BUDDY_PAGE1_800 DIALOG DISCARDABLE  0, 0, 152, 263
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Title",IDC_STATIC,42,20,16,8
+    RTEXT           "First Name",IDC_STATIC,22,34,36,8
+    RTEXT           "Last Name",IDC_STATIC,21,50,37,8
+    EDITTEXT        IDC_TITLE,59,17,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FIRSTNAME,59,32,68,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LASTNAME,59,47,68,13,ES_AUTOHSCROLL
+    LTEXT           "Address",IDC_STATIC,22,85,30,8
+    EDITTEXT        IDC_ADDRESS,22,95,102,72,ES_MULTILINE | 0x1000
+    LTEXT           "Phone",IDC_STATIC,23,184,30,8
+    EDITTEXT        IDC_PHONE,23,193,102,13,ES_AUTOHSCROLL
+    LTEXT           "FAX",IDC_STATIC,23,209,30,8
+    EDITTEXT        IDC_FAX,23,218,102,13,ES_AUTOHSCROLL
+END
+
+IDD_BUDDY_PAGE2_800 DIALOG DISCARDABLE  0, 0, 153, 261
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NOTES,17,18,103,229,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL | 0x1000
+    PUSHBUTTON      "A",IDC_BUTTON_A,133,28,9,14,WS_DISABLED
+    PUSHBUTTON      "B",IDC_BUTTON_B,133,42,9,14,WS_DISABLED
+    PUSHBUTTON      "C",IDC_BUTTON_C,133,58,9,14,WS_DISABLED
+    PUSHBUTTON      "D",IDC_BUTTON_D,133,73,9,14,WS_DISABLED
+    PUSHBUTTON      "E",IDC_BUTTON_E,133,88,9,14,WS_DISABLED
+    PUSHBUTTON      "F",IDC_BUTTON_F,133,103,9,14,WS_DISABLED
+    PUSHBUTTON      "G",IDC_BUTTON_G,133,118,9,14,WS_DISABLED
+    PUSHBUTTON      "H",IDC_BUTTON_H,133,133,9,14,WS_DISABLED
+    PUSHBUTTON      "I",IDC_BUTTON_I,133,148,9,14,WS_DISABLED
+    PUSHBUTTON      "M",IDC_BUTTON_M,133,208,9,14,WS_DISABLED
+    PUSHBUTTON      "L",IDC_BUTTON_L,133,193,9,14,WS_DISABLED
+    PUSHBUTTON      "K",IDC_BUTTON_K,133,178,9,14,WS_DISABLED
+    PUSHBUTTON      "J",IDC_BUTTON_J,133,162,9,14,WS_DISABLED
+    PUSHBUTTON      "N",IDC_BUTTON_N,143,28,9,14,WS_DISABLED
+    PUSHBUTTON      "O",IDC_BUTTON_O,143,42,9,14,WS_DISABLED
+    PUSHBUTTON      "P",IDC_BUTTON_P,143,58,9,14,WS_DISABLED
+    PUSHBUTTON      "Q",IDC_BUTTON_Q,143,73,9,14,WS_DISABLED
+    PUSHBUTTON      "R",IDC_BUTTON_R,143,88,9,14,WS_DISABLED
+    PUSHBUTTON      "S",IDC_BUTTON_S,143,103,9,14,WS_DISABLED
+    PUSHBUTTON      "T",IDC_BUTTON_T,143,118,9,14,WS_DISABLED
+    PUSHBUTTON      "U",IDC_BUTTON_U,143,133,9,14,WS_DISABLED
+    PUSHBUTTON      "V",IDC_BUTTON_V,143,148,9,14,WS_DISABLED
+    PUSHBUTTON      "Z",IDC_BUTTON_Z,143,208,9,14,WS_DISABLED
+    PUSHBUTTON      "Y",IDC_BUTTON_Y,143,193,9,14,WS_DISABLED
+    PUSHBUTTON      "X",IDC_BUTTON_X,143,178,9,14,WS_DISABLED
+    PUSHBUTTON      "W",IDC_BUTTON_W,143,162,9,14,WS_DISABLED
+    LTEXT           "Notes",IDC_STATIC,17,6,30,8
+END
+
+IDD_DIVE_PAGE1_800 DIALOG DISCARDABLE  0, 0, 155, 266
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_DATE,56,6,71,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LOCATION_COMBO,39,20,89,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Good",IDC_RADIO_VIS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,35,52,29,10
+    CONTROL         "&Medium",IDC_VIS_MEDIUM,"Button",BS_AUTORADIOBUTTON,71,
+                    52,36,10
+    CONTROL         "&Poor",IDC_VIS_POOR,"Button",BS_AUTORADIOBUTTON,35,64,
+                    26,10
+    EDITTEXT        IDC_EDIT_VIS,71,63,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AIR_START,39,119,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AIR_END,87,119,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIME_IN,39,133,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIME_OUT,87,133,24,12,ES_AUTOHSCROLL
+    CONTROL         "        &A",IDC_RADIO_AIR,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,31,194,12,10
+    CONTROL         "       ",IDC_RADIO_AIR_WARM,"Button",BS_AUTORADIOBUTTON,
+                    59,194,12,10
+    CONTROL         "           ",IDC_RADIO_AIR_HOT,"Button",
+                    BS_AUTORADIOBUTTON,81,194,12,10
+    CONTROL         "      &S",IDC_RADIO_SURFACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,31,209,12,10
+    CONTROL         "             ",IDC_RADIO_SURFACE_WARM,"Button",
+                    BS_AUTORADIOBUTTON,59,209,12,10
+    CONTROL         "                   ",IDC_RADIO_SURFACE_HOT,"Button",
+                    BS_AUTORADIOBUTTON,81,209,12,10
+    CONTROL         "          &B",IDC_RADIO_BOTTOM,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,31,220,12,10
+    CONTROL         "                 ",IDC_RADIO_BOTTOM_WARM,"Button",
+                    BS_AUTORADIOBUTTON,59,220,12,10
+    CONTROL         "                   ",IDC_RADIO_BOTTOM_HOT,"Button",
+                    BS_AUTORADIOBUTTON,81,220,12,10
+    LTEXT           "&Bottom",IDC_STATIC,99,220,24,8,NOT WS_GROUP
+    LTEXT           "&Surface",IDC_STATIC,99,209,27,8,NOT WS_GROUP
+    LTEXT           "&Air",IDC_STATIC,99,194,10,8,NOT WS_GROUP
+    RTEXT           "Date:",IDC_STATIC,25,7,30,8,NOT WS_GROUP
+    LTEXT           "Loc.:",IDC_STATIC,19,23,18,8,NOT WS_GROUP
+    GROUPBOX        "Average Visibility",IDC_STATIC,30,43,83,37
+    LTEXT           "Ft.",IDC_MEASURE_VIS,95,65,14,8
+    GROUPBOX        "Tank Pressures && Time",IDC_STATIC,21,98,106,53
+    LTEXT           "START",IDC_STATIC,39,109,25,8,NOT WS_GROUP
+    LTEXT           "END",IDC_STATIC,87,109,16,8,NOT WS_GROUP
+    LTEXT           "bar",IDC_MEASURE_AIR_START,61,122,12,8,NOT WS_GROUP
+    LTEXT           "bar",IDC_MEASURE_AIR_END,111,122,12,8,NOT WS_GROUP
+    RTEXT           "In:",IDC_STATIC,27,135,10,8,NOT WS_GROUP
+    RTEXT           "Out:",IDC_STATIC,71,135,15,8,NOT WS_GROUP
+    GROUPBOX        "Temperature",IDC_STATIC,21,167,107,68
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,49,178,1,56
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,75,178,1,56
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,95,178,1,56
+END
+
+IDD_DIVE_PAGE2_800 DIALOG DISCARDABLE  0, 0, 154, 265
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_SI,31,7,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DEPTH,29,28,19,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BOTTOM_TIME,67,55,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STOP,105,28,19,13,ES_AUTOHSCROLL
+    LTEXT           "__________________",IDC_STATIC,36,78,74,8,NOT WS_GROUP
+    CTEXT           "TBT",IDC_STATIC,93,76,16,8
+    CTEXT           "ABT",IDC_STATIC,65,76,16,8
+    LTEXT           "SI",IDC_STATIC,21,9,8,8,NOT WS_GROUP
+    CTEXT           "A",IDC_PG_BEFORE,58,9,6,8,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,25,22,40,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,65,22,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,65,51,32,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,97,22,1,30
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,97,22,25,1
+    LTEXT           "m",IDC_MEASURE_DEPTH,49,30,10,8,NOT WS_GROUP
+    LTEXT           "Depth",IDC_STATIC,27,41,21,8,NOT WS_GROUP
+    CTEXT           "15ft/5m stop",IDC_STATIC,99,44,28,16,NOT WS_GROUP
+    LTEXT           "mins.",IDC_STATIC,87,57,18,8,NOT WS_GROUP
+    LTEXT           "Bottom Time:",IDC_STATIC,21,57,44,8,NOT WS_GROUP
+    CTEXT           "RNT",IDC_STATIC,37,76,16,8
+    CTEXT           "0",IDC_RNT,37,89,16,8,NOT WS_GROUP
+    CTEXT           "0",IDC_ABT,65,89,16,8,NOT WS_GROUP
+    CTEXT           "0",IDC_TBT,93,89,16,8,NOT WS_GROUP
+    LTEXT           "+",IDC_STATIC,56,89,6,8,NOT WS_GROUP
+    LTEXT           "=",IDC_STATIC,85,89,6,8,NOT WS_GROUP
+    CONTROL         "&Fresh",IDC_CHECK_FRESH,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,32,113,35,10
+    CONTROL         "&Salt",IDC_CHECK_SALT,"Button",BS_AUTOCHECKBOX,32,122,
+                    35,10
+    CONTROL         "S&hore",IDC_CHECK_SHORE,"Button",BS_AUTOCHECKBOX,32,131,
+                    35,10
+    CONTROL         "&Boat",IDC_CHECK_BOAT,"Button",BS_AUTOCHECKBOX,32,140,
+                    35,10
+    CONTROL         "&Waves",IDC_CHECK_WAVES,"Button",BS_AUTOCHECKBOX,79,113,
+                    35,10
+    CONTROL         "&Current",IDC_CHECK_CURRENT,"Button",BS_AUTOCHECKBOX,79,
+                    122,35,10
+    CONTROL         "S&urf",IDC_CHECK_SURF,"Button",BS_AUTOCHECKBOX,79,131,
+                    35,10
+    CONTROL         "Su&rge",IDC_CHECK_SURGE,"Button",BS_AUTOCHECKBOX,79,140,
+                    35,10
+    GROUPBOX        "Dive Type",IDC_STATIC,20,105,105,47
+    CONTROL         "&Dry Suit",IDC_CHECK_DRYSUIT,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,29,170,39,10
+    CONTROL         "&Wet Suit",IDC_CHECK_WETSUIT,"Button",BS_AUTOCHECKBOX,
+                    29,180,40,10
+    CONTROL         "&S-Dry Suit",IDC_CHECK_SEMI_DRYSUIT,"Button",
+                    BS_AUTOCHECKBOX,29,190,44,10
+    CONTROL         "&Under Suit",IDC_CHECK_UNDERSUIT,"Button",
+                    BS_AUTOCHECKBOX,29,200,45,10
+    CONTROL         "&Gloves",IDC_CHECK_GLOVES,"Button",BS_AUTOCHECKBOX,81,
+                    170,35,10
+    CONTROL         "&Mittens",IDC_CHECK_MITTENS,"Button",BS_AUTOCHECKBOX,81,
+                    180,35,10
+    CONTROL         "&Hood",IDC_CHECK_HOOD,"Button",BS_AUTOCHECKBOX,81,190,
+                    35,10
+    CONTROL         "&Socks",IDC_CHECK_SOCKS,"Button",BS_AUTOCHECKBOX,81,200,
+                    35,10
+    GROUPBOX        "Exposure Protection",IDC_STATIC,19,162,105,50
+    RTEXT           "Weight:",IDC_STATIC,22,223,27,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_WEIGHT,50,220,16,12,ES_AUTOHSCROLL
+    LTEXT           "lbs.",IDC_MEASURE_WEIGHT,67,223,13,8,NOT WS_GROUP
+    PUSHBUTTON      "&Notes",IDC_NOTES,84,219,39,14
+    CTEXT           "A",IDC_PG_AFTER,102,9,6,8,NOT WS_GROUP
+    GROUPBOX        "",IDC_STATIC,53,2,17,17
+    GROUPBOX        "",IDC_STATIC,97,2,17,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIVE_PAGE1 DLGINIT
+BEGIN
+    1010, 0x403, 1, 0
+"\000" 
+    0
+END
+
+IDD_WIN95_DIVE_PAGE1 DLGINIT
+BEGIN
+    1010, 0x403, 1, 0
+"\000" 
+    0
+END
+
+IDD_REPORTS_FILTER DLGINIT
+BEGIN
+    1136, 0x403, 2, 0
+0x003d, 
+    1136, 0x403, 3, 0
+0x3e3c, "\000" 
+    1136, 0x403, 2, 0
+0x003e, 
+    1136, 0x403, 2, 0
+0x003c, 
+    1137, 0x403, 4, 0
+0x4e41, 0x0044, 
+    1137, 0x403, 3, 0
+0x524f, "\000" 
+    1139, 0x403, 2, 0
+0x003d, 
+    1139, 0x403, 3, 0
+0x3e3c, "\000" 
+    1139, 0x403, 2, 0
+0x003e, 
+    1139, 0x403, 2, 0
+0x003c, 
+    1140, 0x403, 4, 0
+0x4e41, 0x0044, 
+    1140, 0x403, 3, 0
+0x524f, "\000" 
+    1142, 0x403, 2, 0
+0x003d, 
+    1142, 0x403, 3, 0
+0x3e3c, "\000" 
+    1142, 0x403, 2, 0
+0x003e, 
+    1142, 0x403, 2, 0
+0x003c, 
+    0
+END
+
+IDD_DIVE_PAGE1_800 DLGINIT
+BEGIN
+    1010, 0x403, 1, 0
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_DIVEREC             CURSOR  DISCARDABLE     "RES\\CURSOR1.CUR"
+IDC_NODROP              CURSOR  DISCARDABLE     "RES\\CUR00001.CUR"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Dive Log"
+    IDR_LOGTYPE             "\nLog\nLog Document\nDive Log Files (*.dvl)\n.dvl\nLog.Document\nLog Document"
+    IDS_OLDVER              "This log was saved by a previous version of Dive Log. The log will be saved in the new Dive Log V2 file format. Do you wish to continue?"
+    IDS_TABLES              "TABLES.DAT"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Dive Log"
+    AFX_IDS_IDLEMESSAGE     "Ready."
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAPS"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new log\nNew"
+    ID_FILE_OPEN            "Open an existing log\nOpen"
+    ID_FILE_CLOSE           "Close the active log\nClose"
+    ID_FILE_SAVE            "Save the active log\nSave"
+    ID_FILE_SAVE_AS         "Save the active log with a new name"
+    ID_FILE_PAGE_SETUP      "Change the printing options"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options"
+    ID_FILE_PRINT           "Print the current dive/report\nPrint Dive/Report"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save logs"
+    ID_HELP_INDEX           "List Help topics"
+    ID_HELP_USING           "Display instructions about how to use help"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows"
+    ID_HELP                 "Display help for current task or command"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this log"
+    ID_FILE_MRU_FILE2       "Open this log"
+    ID_FILE_MRU_FILE3       "Open this log"
+    ID_FILE_MRU_FILE4       "Open this log"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane"
+    ID_PREV_PANE            "Switch back to the previous window pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles"
+    ID_WINDOW_SPLIT         "Split the active window into panes"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection"
+    ID_EDIT_CLEAR_ALL       "Erase everything"
+    ID_EDIT_COPY            "Copy the current record and put it on the Clipboard"
+    ID_EDIT_CUT             "Cut the current record and put it on the Clipboard"
+    ID_EDIT_FIND            "Find the specified text"
+    ID_EDIT_PASTE           "Insert Clipboard contents"
+    ID_EDIT_REPEAT          "Repeat the last action"
+    ID_EDIT_REPLACE         "Replace specific text with different text"
+    ID_EDIT_SELECT_ALL      "Select the entire document"
+    ID_EDIT_UNDO            "Undo the last action"
+    ID_EDIT_REDO            "Redo the previously undone action"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the logs"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_DIVE_NEW            "Add a new record into the log.\nAdd"
+    IDM_DIVE_REMOVE         "Remove the current record from the log.\nDelete"
+    IDM_RECORD_FIRST        "Goto the first record in the log.\nFirst Record"
+    IDM_RECORD_PREV         "Goto the previous record in the log.\nPrevious Record"
+    IDM_RECORD_NEXT         "Goto the next record in the log.\nNext Record"
+    IDM_RECORD_LAST         "Goto the last record in the log.\nLast Record"
+    IDM_OPTIONS             "Change the options of Dive Log."
+    IDM_EDIT_LOCATIONS      "Add, remove and modify the locations"
+    IDM_DEF_SETTTINGS       "Change default settings for a dive location"
+    IDM_REPORTS             "Create,  open and run a report"
+    ID_FILE_PRINT_BLANK     "Print a blank dive form"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DISK_SPACE_UNAVAIL  "Unavailable"
+    IDS_DISK_SPACE          "%lu KB Free"
+    IDS_MATH_COPR_NOTPRESENT "Not present"
+    IDS_MATH_COPR_PRESENT   "Present"
+    IDS_AVAIL_MEM           "%lu KB Free"
+    IDS_PHYSICAL_MEM        "%lu KB"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_REPORTTYPE          "\nReport\nReport.Document"
+END
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "res\divelog.rc2"  // non-App Studio edited resources
+
+#include "afxres.rc"  	// Standard components
+#include "afxprint.rc"	// printing/print preview resources
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
